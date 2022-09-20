@@ -13,7 +13,7 @@ const App = () => {
       }}
     >
       <header>
-        <h1>My Browser Components</h1>
+        <h1>Sean's Components Practise</h1>
       </header>
       <section
         css={{ display: "flex", flexDirection: "column", alignItems: "center" }}
@@ -21,6 +21,7 @@ const App = () => {
         <Link to="/faqs">FAQ</Link>
         <Link to="/imageCarousel">Image Carousel</Link>
         <Link to="/tree">Tree Visulisation component</Link>
+        <Link to="/interview">Atlassian Interview Route</Link>
       </section>
     </section>
   );

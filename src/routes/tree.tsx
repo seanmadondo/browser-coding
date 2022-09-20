@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { useEffect, useState } from "react";
-import { ExpandableDropdown } from "../components/ExpandableDropdown";
+import { FileTreeExpand } from "../components/FileTreeExpand";
 import FolderIcon from "@mui/icons-material/Folder";
 import { IExpandableDropdown } from "../types";
 import DesktopMacIcon from "@mui/icons-material/DesktopMac";
@@ -40,7 +40,7 @@ const mapChildren = (childrenData: IExpandableDropdown[]): JSX.Element => {
         return (
           <section key={child.key}>
             {child.children ? (
-              <ExpandableDropdown
+              <FileTreeExpand
                 key={child.key}
                 icon={
                   child.children ? (
@@ -92,7 +92,7 @@ export const Tree = () => {
     >
       {data.map((expandable: IExpandableDropdown) => {
         return (
-          <ExpandableDropdown
+          <FileTreeExpand
             key={expandable.key}
             icon={switchExpandableIcon(expandable.label)}
             label={expandable.label}

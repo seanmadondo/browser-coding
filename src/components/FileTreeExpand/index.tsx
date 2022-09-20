@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import { IExpandableDropdown } from "../../types";
 
-export const ExpandableDropdown = ({
+export const FileTreeExpand = ({
   icon,
   title,
   label,

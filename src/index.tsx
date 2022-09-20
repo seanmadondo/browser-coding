@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ImageCarousel from "./routes/carousel";
 import { Tree } from "./routes/tree";
+import { Component } from "./routes/interview";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,6 +20,7 @@ root.render(
         <Route path="/faqs" element={<FAQ />} />
         <Route path="/imageCarousel" element={<ImageCarousel />} />
         <Route path="/tree" element={<Tree />} />
+        <Route path="/interview" element={<Component />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

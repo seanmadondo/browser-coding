@@ -2,7 +2,7 @@
 import { CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Container } from "./../components/Container";
-import { Expandable } from "./../components/Expandable";
+import { FaqExpand } from "../components/FaqExpand";
 
 interface Question {
   id: number;
@@ -51,7 +51,7 @@ const FAQ = () => {
       <Container>
         {data.map((item: Question) => {
           return (
-            <Expandable
+            <FaqExpand
               key={item.id}
               title={item.question}
               description={item.answer}

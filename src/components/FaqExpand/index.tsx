@@ -8,7 +8,7 @@ interface AccordionProps {
   description: string;
 }
 
-export const Expandable = ({ title, description }: AccordionProps) => {
+export const FaqExpand = ({ title, description }: AccordionProps) => {
   return (
     <Accordion
       data-testid={ElementDataId.AccordionComponent}
