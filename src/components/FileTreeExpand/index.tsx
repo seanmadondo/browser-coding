@@ -3,9 +3,10 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
+import React from "react";
 import { IExpandableDropdown } from "../../types";
 
-export const FileTreeExpand = ({
+const FileTreeExpand = ({
   icon,
   title,
   label,
@@ -36,3 +37,5 @@ export const FileTreeExpand = ({
     </section>
   );
 };
+
+export const MemoizedFileExpand = React.memo(FileTreeExpand);
